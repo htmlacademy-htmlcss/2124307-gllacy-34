@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -16,6 +17,10 @@
             <a class="navigation-link navigation-link-current" href="catalog.html">Каталог</a>
             <!--Новинки-->
             <ul class="navigation-news-list">
+              <li class="navigation-item">
+                <a class="navigation-news-item-list" href="#">Новинки</a>
+              </li>
+              <hr>
               <li class="navigation-item">
                 <a class="navigation-news-item-list" href="#">Сливочное</a>
               </li>
@@ -142,7 +147,7 @@
               </li>
             </ul> 
           </fieldset>
-        <button class="button" type="submit">Применить</button>
+        <button class="button-catalog" type="submit">Применить</button>
       </form>
 
       <section class="catalog-ice-cream">
@@ -256,14 +261,14 @@
             </button>
           </li>
         </ul> 
-        <a class="button button-all" href="#">Показать еще</a>
+        <a class="button button-all button-white" href="#">Показать еще</a>
+
         <ul class="catalog-pagination">
           <li class="catalog-pagination-item">
             <a class="catalog-pagination-link pagination-prev pagination-disabled">
               <span class="visually-hidden">Предыдущая страница</span>
             </a>
           </li>
-          <li class="catalog-pagination-item">
             <a class="pagination-link pagination-current">1</a>
           </li>
           <li class="catalog-pagination-item">
@@ -307,7 +312,7 @@
         <section class="company-information">
         <h2 class="visually-hidden">Иформация о компание</h2>
           <ul class="company-information-list">
-            <li class="company-information-item">Для поставщиков.
+            <li class="company-information-item-bold">Для поставщиков.
             </li>
             <li class="company-information-item">О производстве.
             </li>
@@ -319,7 +324,7 @@
           <img class="logo" src="\images\catalog\logo_htmlacademy.svg " width="93" height="26.71px" alt="Логотип html academy">
           <p class="about-text">
             Сделано в 
-            <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
+            <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy &copy; 2021</a>
           </p>
         </section>
       </footer>
