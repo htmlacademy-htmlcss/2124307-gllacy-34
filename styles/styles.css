@@ -19,12 +19,23 @@
   src: url("fonts/inter-900.woff2") format("woff2");
   font-display: swap;
 }
+html {
+  height: 100%;
+}
 body { 
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "Inter";
   font-size: 16px;
   line-height: 24px;
   color: #2D3440;
   background-color:  #FEAFC3;
+}
+.page-header-logo{
+  width: 137px;
+  height: 56px;
 }
 .button-all {
   font-family: "Inter", sans-serif;
@@ -34,23 +45,40 @@ body {
   text-align: center;
   text-decoration:none; 
 }
-.button-white {
+.button-order {
   color: #2D3440;
   background-color: #FCFCFC;
 }
-.button-red{
+.button-form{
   color: #FCFCFC;
   background-color:#FF2F64; 
 }
 /* Pages */
+.navigation {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+}
+.navigation-container{
+  display: flex;
+  width: 553px;
+  justify-content:space-between;
+}
+.navigation-list {
+  margin: 0;
+  width: 400px;
+  padding: 0;
+}
+.navigation-user{
+  max-width: 431px;
+  margin-left: auto;
+}
 .navigation-news-item-list{
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: #2D3440;
 }
-
-
 .navigation-link {
   font-family: "Inter", sans-serif;
   line-height: 20px;
@@ -58,6 +86,13 @@ body {
   text-align: center;
   color: inherit;
   text-decoration:none;
+}
+.main-container {
+  flex-grow: 1;
+}
+.pade-container {
+ width: 1170px;
+ margin: 0 auto;
 }
 .contacts-phone {
   font-family: "Inter", sans-serif;
@@ -83,13 +118,27 @@ body {
   line-height: 46px;
   text-align: center;
 }
+.index-columns{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 ;
+}
+.promotions-list{
+  display: flex; 
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.promotions-item{
+ background-color: #FF7799;
+ width: 570px;
+ /* height: 268px; */
+}
 .promotions-item-header {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
-}
-.promotions-item{
-  background-color: #FF7799;
 }
 .promotions-description {
   font-weight: 400;
@@ -101,6 +150,16 @@ body {
   font-size: 32px;
   line-height: 46px;
   text-align: center;
+}
+
+.catalog-ice-cream-list {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.catalog-ice-cream-item{
+  width: 270px;
+  background-color:#FCFCFC;
 }
 .catalog-ice-cream-name {
   font-weight: 700;
@@ -122,6 +181,12 @@ body {
 .production{
   background-image: url("../images/index/wafer.jpg");
   background-repeat: no-repeat;
+  background-size: 100%;
+}
+.production-wrapper{
+  margin: 0 auto;
+  width: 1122px;
+  background-color: #FCFCFC;
 }
 .production-header {
   font-weight: 900;
@@ -135,9 +200,15 @@ body {
   line-height: 22px;
   color: #565C66;
 }
+.blog-subscription-wrapper{
+  display: flex;
+  justify-content: space-between;
+}  
 .blog{
   background-image: url("../images/index/blog.jpg");
   background-repeat: no-repeat;
+  width: 570px;
+  background-size: 100%;
 }
 .blog-news {
   font-weight: 400;
@@ -153,6 +224,12 @@ body {
 .subscription{
   background-image: url("../images/index/mail.jpg");
   background-repeat: no-repeat;
+  width: 570px;
+}
+.subscription-wrapper{
+  margin: 0 auto;
+  width: 560px;
+  background: #FFFFFF;
 }
 .subscription-news {
   font-weight: 400;
@@ -163,6 +240,7 @@ body {
 .delivery{
   background-image: url("../images/index/delivery.jpg");
   background-repeat: no-repeat;
+  background-size: 100%;
 }
 .delivery-header {
   font-weight: 900;
@@ -222,6 +300,15 @@ body {
   line-height: 20px;
   color: #565C66;
 }
+.page-footer-container{
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+}
+.page-footer-list{
+  width: 200px;
+  margin-right: 130px;
+}
 .company-information-item-bold{
   font-weight: 700;
   font-size: 14px;
@@ -238,6 +325,19 @@ body {
   line-height: 16px;
   color: #2D3440;
 }
+.company-information-container{
+font-style: normal;
+}
+.page-footer-logo-container{
+  margin-left: auto;
+  max-width: 193px;
+}
+
+
+
+
+
+
 /* Catalog */
 .navigation-link-current{
   color: #FCFCFC;
@@ -246,6 +346,10 @@ body {
   .cart-button{
   color: #FCFCFC;
   background-color:#FF2F64;
+}
+.navigation-logo{
+  width: 137px;
+  height: 56px;
 }
 
 .breadcrumbs-link{
