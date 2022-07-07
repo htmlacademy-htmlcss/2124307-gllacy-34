@@ -229,7 +229,7 @@ body {
   text-align: center;
 }
 
-.catalog-ice-cream-list {
+/* .catalog-ice-cream-list {
   display: flex;
   margin: 0;
   padding: 0;
@@ -237,6 +237,16 @@ body {
   flex-wrap: wrap;
   list-style-type: none;
   justify-content: space-between
+} */
+
+.catalog-ice-cream-list {
+  display: grid;
+  list-style-type: none;
+  grid-template-columns: repeat(4, 270px);
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+
 }
 
 .catalog-ice-cream-item {
@@ -329,6 +339,7 @@ body {
   background-size: 100%;
   border-radius: 16px;
   padding: 32px 0 67px 32px;
+  background-position: center;
 }
 
 .blog-news {
@@ -381,6 +392,7 @@ body {
   border-radius: 16px;
   display: flex;
   margin: 80px 0 80px 0;
+  background-position: center;
 }
 
 .delivery-container {
@@ -412,9 +424,54 @@ body {
 .delivery-address-container {
   width: 500px;
   background-color: #FCFCFC;
-  margin: 64px;
-  padding: 64px;
+  margin: 64px 64px 64px 0;
+  padding: 40px;
   border-radius: 8px;
+}
+
+.delivery-form {
+  display: grid;
+  grid-template-columns: 117px 287px;
+  grid-template-rows: 72px 72px 44px;
+  gap: 16px;
+}
+
+.delivery-form p {
+  margin: 0;
+}
+
+.delivery-form input {
+  height: 48px;
+  margin-top: 8px;
+  padding-left: 16px;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
+
+}
+
+.delivery-form input::placeholder {
+  color: #B9B9B9;
+}
+
+.delivery-appointment-form-date {
+  display: flex;
+  flex-direction: column;
+}
+
+.delivery-form-phone {
+  display: flex;
+  flex-direction: column;
+}
+
+.delivery-form-address {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+}
+
+.button-form {
+  grid-column: 1 / -1;
+  justify-self: center;
 }
 
 .delivery-address {
@@ -422,6 +479,8 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: #565C66;
+  margin: 0 0 36px 0;
+  padding: 0;
 }
 
 .delivery-form {
@@ -435,6 +494,7 @@ body {
   background-repeat: no-repeat;
   border-radius: 16px;
   padding: 20px;
+  background-position: center;
 }
 
 .contacts-container {
@@ -449,7 +509,8 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  color: #565C66
+  color: #565C66;
+  margin: 0;
 }
 
 .contacts-address-text {
@@ -465,6 +526,7 @@ body {
   line-height: 22px;
   color: #565C66;
   font-style: normal;
+  margin: 0;
 }
 
 .contacts-phone {
@@ -472,6 +534,7 @@ body {
   font-size: 20px;
   line-height: 24px;
   font-style: normal;
+  margin: 0;
 }
 
 .contacts-subtitle {
@@ -479,6 +542,7 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #565C66;
+  margin: 0;
 }
 
 .page-footer-container {
@@ -492,21 +556,25 @@ body {
 .page-footer-list {
   display: flex;
   width: 200px;
-  margin-right: 130px;
+  margin-right: 180px;
   list-style-type: none;
   flex-wrap: wrap;
 
 }
+
 
 .company-information-list {
-  display: flex;
+  display: grid;
   list-style-type: none;
   width: 356px;
-  flex-wrap: wrap;
   padding: 0;
   margin: 0;
+  grid-template-columns: 152px 182px;
+  grid-template-rows: 20px 20px;
+  grid-row-gap:8px;
 
 }
+
 
 .company-information-item-bold {
   font-weight: 700;
@@ -519,7 +587,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  width: 174px;
+
 }
 
 .about-text {
