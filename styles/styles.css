@@ -292,19 +292,25 @@ body {
 }
 
 .best-ice-cream-container {
-  width: 540px;
+  width: 470px;
+  padding-top: 136px;
+  padding-left: 70px;
 }
 
 .best-ice-cream-title {
   font-weight: 900;
   font-size: 36px;
   line-height: 46px;
+  margin: 0;
 }
 
 .best-ice-cream-description {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
+  width: 414px;
+  margin-top: 24px;
+  margin-bottom: 48px;
 }
 
 .best-ice-cream-slider {
@@ -389,9 +395,26 @@ body {
   color: #FCFCFC;
   cursor: pointer;
   background: rgba(252, 252, 252, 0.3);
-  border: 3px solid #FCFCFC;
+  border: 2px solid #FCFCFC;
   border-radius: 26px;
   padding: 0;
+}
+
+.slider-button:hover{
+  background: #FCFCFC;
+  color: #242424;
+}
+
+.slider-button:focus{
+  background: rgba(252, 252, 252, 0.3);
+  color: #242424;
+  border: 2px solid #242424;
+}
+
+.slider-button:active{
+  background: rgba(252, 252, 252, 0.3);
+  color: #242424;
+  border: none;
 }
 
 .slider-button-svg {
@@ -432,6 +455,18 @@ body {
   border: none;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.slider-pagination-button:hover{
+  border: 1px solid #FCFCFC;
+}
+
+slider-pagination-button:focus{
+  border: 1px solid #2D3440;
+}
+
+.slider-pagination-button:active{
+border: none;
 }
 
 .slider-pagination-current {
@@ -598,9 +633,9 @@ button-social-link {
 .catalog-ice-cream-img {
   clip-path: circle(40% at center center);
   position: absolute;
-  top: -85px;
-  width: 217px;
-  height: 217px;
+  top: -72px;
+  width: 210px;
+  height: 210px;
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   margin-left: auto;
   margin-right: auto;
@@ -708,11 +743,12 @@ button-social-link {
 .blog {
   background-image: url("../images/index/blog.jpg");
   background-repeat: no-repeat;
+  background-color: #FFFFFF;
   width: 538px;
-  background-size: 100%;
+  background-size: 110%;
   border-radius: 16px;
   padding: 32px 0 67px 32px;
-  background-position: center;
+  background-position: bottom -95px right -68px;
 }
 
 .blog-news {
@@ -756,22 +792,23 @@ button-social-link {
   font-size: 16px;
   line-height: 22px;
   color: #565C66;
-  margin: 0 0 38px 0;
+  margin: 0 0 44px 0;
 }
 
 .subscription-field {
-  width: 296px;
-  margin-right: 10px;
+  width: 300px;
+  margin-right: 13px;
 }
 
 .delivery {
   background-image: url("../images/index/delivery.jpg");
+  background-color: #FFFFFF;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 105%;
   border-radius: 16px;
   display: flex;
   margin: 80px 0 80px 0;
-  background-position: center;
+  background-position: bottom -147px right -58px;
 }
 
 .delivery-container {
@@ -857,9 +894,55 @@ button-social-link {
   padding: 0;
 }
 
-.delivery-icon {
-  min-width: 12px;
-  border: 1.53333px
+.form-label{
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+
+.tooltip {
+  position: absolute;
+  margin-top: 3px;
+  margin-left: 2px;
+  width: 16px;
+  height: 16px;
+}
+
+.tooltip-toggle {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin-left: 3px;
+  display: block;
+}
+
+.tooltip-icon {
+  width: 100%;
+  height: 100%;
+  color: #242424;
+  display: block;
+}
+
+.tooltip-text {
+  background-color: #FCFCFC;
+  color: #565C66;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: normal;
+  text-transform: none;
+  padding: 10px 8px;
+  border-radius: 1px;
+  width: 160px;
+  position: absolute;
+  top: -80%;
+  left: 150%;
+  z-index: 1;
+  border: 1px solid #F0F0F0;
+  display: none;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
 }
 
 .contacts {
@@ -1018,6 +1101,7 @@ button-social-link {
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 8px;
+  padding-left: 16px;
 }
 
 .catalog-filter-list {
@@ -1256,6 +1340,7 @@ button-social-link {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  margin-top: 30px;
 }
 
 .breadcrumbs-link {
@@ -1279,6 +1364,8 @@ button-social-link {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
+  margin-top: 15px;
+  margin-bottom: 39px;
 }
 
 .select-control {
@@ -1297,6 +1384,7 @@ button-social-link {
   height: 40px;
   color:#2D3440;
   margin-top: 30px;
+  margin-right: 16px;
 }
 
 .button-catalog:hover {
@@ -1351,14 +1439,35 @@ button-social-link {
   line-height: 20px;
   color: #2D3440;
   text-decoration: none;
-
+  display: block;
+  height: 24px;
 }
+
+.catalog-pagination-link-inner{
+  padding: 2px 0;
+}
+
+.catalog-pagination-link:hover{
+  background: rgba(252, 252, 252, 0.5);
+  border-radius: 50px;
+}
+
+.catalog-pagination-link:focus{
+  background: rgba(252, 252, 252, 0.5);
+  border-radius: 50px;
+  outline: 1px solid #2D3440;
+}
+
+.catalog-pagination-link:active{
+  background: rgba(252, 252, 252, 0.5);
+  border-radius: 50px;
+  outline: 1px solid #FCFCFC;
+}
+
 
 .pagination-current {
   background-color: #FCFCFC;
-  border-radius: 76px;
-  min-height: 20px;
-  padding: 2px 6px;
+  border-radius: 50px;
 }
 
 .htmlacademy-link {
@@ -1370,8 +1479,10 @@ button-social-link {
 
 .line {
   width: 1170px;
-  border: 1px solid rgba(252, 252, 252, 0.3);
-
+  height: 1px;
+  background-color: rgba(252, 252, 252, 0.3)  ;
+  /* border: 1px solid rgba(252, 252, 252, 0.3); */
+margin-top: 36px;
 }
 
 
