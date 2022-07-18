@@ -1021,7 +1021,7 @@ button-social-link {
 }
 
 .contacts {
-  background-image: url("../images/index/Address.jpg");
+  background-image: url("../images/index/address.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   border-radius: 16px;
@@ -1035,7 +1035,7 @@ button-social-link {
   margin: 44px;
   padding: 40px;
   border-radius: 8px;
-  box-shadow: 0px 15px 40px rgb(45 52 64 / 12%);
+  box-shadow: 0 15px 40px rgb(45 52 64 / 12%);
 }
 
 .contacts-title {
@@ -1136,20 +1136,20 @@ button-social-link {
 }
 
 .company-information-link:hover{
-  background-color: #FF2F64;
+  background-color: #FCFCFC;
   border-radius: 8px;
 }
 
 .company-information-link:focus{
   background-color: #FCFCFC;
   border-radius: 8px;
-  outline: 1px solid #2D3440;
+  outline: 2px solid #2D3440;
 }
 
 .company-information-link:active{
   background-color: #FCFCFC;
   border-radius: 8px;
-  outline: 1px solid #FF2F64;
+  outline: 2px solid #FF2F64;
 }
 
 
@@ -1388,6 +1388,17 @@ button-social-link {
   content: "";
 }
 
+.control-input[type="radio"]:checked:focus + .control-mark::before {
+  background-image: url(../images/radio_checked_focus.svg);
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 0;
+  top: 3px;
+  margin: auto;
+  content: "";
+}
+
 .control-input[type="radio"]:not(checked):hover + .control-mark::before {
   background-image: url(../images/radio_unckecked_hover.svg);
   width: 16px;
@@ -1407,6 +1418,17 @@ button-social-link {
   margin: auto;
   width: 16px;
   height: 16px;
+  content: "";
+}
+
+.control-input[type="radio"]:not(checked):focus + .control-mark::before {
+  background-image: url(../images/radio_unckecked_focus.svg);
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 0;
+  top: 3px;
+  margin: auto;
   content: "";
 }
 
@@ -1448,6 +1470,16 @@ button-social-link {
   top: 3px;
 }
 
+.control-input[type="checkbox"]:not(checked):focus + .control-mark::after {
+  background-image: url(../images/checkbox_unchecked_focus.svg);
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 0;
+  top: 3px;
+}
+
 .control-input[type="checkbox"]:not(checked):hover + .control-mark::after {
   background-image: url(../images/checkbox_unchecked_hover.svg);
   content: "";
@@ -1460,6 +1492,16 @@ button-social-link {
 
 .control-input[type="checkbox"]:checked + .control-mark::after {
   background-image: url(../images/checkbox_checked.svg);
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 0;
+  top: 3px;
+}
+
+.control-input[type="checkbox"]:checked:focus + .control-mark::after {
+  background-image: url(../images/checkbox_checked_focus.svg);
   content: "";
   width: 16px;
   height: 16px;
@@ -1636,7 +1678,7 @@ button-social-link {
   display: flex;
   list-style-type: none;
   justify-content: space-between;
-  margin: 0 17px;
+  margin: 0 3px;
   padding: 0;
   width: 120px;
 }
@@ -1657,6 +1699,8 @@ button-social-link {
   display: block;
   height: 24px;
   margin: auto 0;
+  width: 24px;
+  text-align: center;
 }
 
 .catalog-pagination-link-inner{
@@ -1694,7 +1738,7 @@ button-social-link {
 }
 
 .htmlacademy-link:hover{
-  background-color: #FF2F64;
+  background-color: #FCFCFC;
   border-radius: 8px;
 }
 
